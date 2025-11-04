@@ -16,7 +16,10 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link ${activePage eq 'Cars' ? 'active' : ''}"
+                           aria-current="page" href="${pageContext.request.contextPath}/Cars">
+                            Cars
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
