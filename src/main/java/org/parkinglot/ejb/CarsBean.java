@@ -39,7 +39,7 @@ public class CarsBean {
         }
     }
 
-    public void updateCar(CarDto carDto, Long userId) {
+    public void editCar(CarDto carDto, Long userId) {
         LOG.info("updateCar");
         try {
             Car car = entityManager.find(Car.class, carDto.getId());
