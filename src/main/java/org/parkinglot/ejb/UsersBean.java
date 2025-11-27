@@ -34,7 +34,7 @@ public class UsersBean {
     }
 
     public List<UserDto> copyUsersToDto(List<User> users) {
-        List<UserDto> userDtos = users.stream().map(user -> new UserDto(
+        return users.stream().map(user -> new UserDto(
                 user.getId(),
                 user.getUsername(),
                 user.getEmail(),
@@ -48,7 +48,6 @@ public class UsersBean {
                 .sorted(Comparator.comparing(CarDto::getLicensePlate, String.CASE_INSENSITIVE_ORDER))
                 .toList()
         )).sorted(Comparator.comparing(UserDto::getUsername, String.CASE_INSENSITIVE_ORDER)).toList();
-        return userDtos;
     }
 
 }
