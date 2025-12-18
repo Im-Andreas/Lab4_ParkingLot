@@ -5,6 +5,7 @@ public class CarDto {
     String licensePlate;
     String parkingSpot;
     String ownerName;
+    CarPhotoDto photo;
 
     public CarDto(Long id, String licensePlate, String parkingSpot, String ownerName) {
         this.id = id;
